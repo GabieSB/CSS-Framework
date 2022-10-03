@@ -1,0 +1,112 @@
+:root{
+    /*GLOBAL VARIABLES*/
+    --default-color: rgb(83, 80, 80);
+    --primary-color: #0054A7;
+    --success-color: #008235;
+    --danger-color: #DA3234;
+    --warning-color:  #eebe00;
+    --font-family:  Roboto, sans-serif;
+}
+
+button{
+    font-family: var(--font-family);
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 23px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 5px;
+    transition : 252ms;
+    transform: translateY(0);
+    background-color: var(--default-color);
+    border: solid var(--default-color) 2px;
+}
+
+
+button:hover{
+    transition : 252ms;
+    padding: 10px 24px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: var(--default-color);
+    border: solid 2px var(--default-color);
+}
+
+.primary-btn{
+    background-color: var(--primary-color);
+    border: solid var(--primary-color) 2px;
+}
+.primary-btn:hover{
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+}
+.success-btn{
+    background-color: var(--success-color);
+    border: solid var(--success-color) 2px;
+}
+.success-btn:hover{
+    color: var(--success-color);
+    border: solid 2px var(--success-color);
+}
+.warning-btn{
+    background-color: var(--warning-color);
+    color: rgb(0, 0, 0);
+    border: solid var(--warning-color) 2px;
+}
+.warning-btn:hover{
+    color: var(--warning-color);
+    border: solid 2px var(--warning-color);
+}
+.danger-btn{
+    background-color: var(--danger-color);
+    border: solid var(--danger-color) 2px;
+}
+.danger-btn:hover{
+    color: var(--danger-color);
+    border: solid 2px var(--danger-color);
+}
+.rounded-btn{
+    border-radius: 40px;
+}
+
+select{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 305px;
+    padding: 10px 20px;
+    font-family: var(--font-family);
+    font-weight: 0;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 6px solid var(--primary-color);
+    border-radius: 5px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/60/60995.png");
+    background-repeat: no-repeat;
+    background-size: 47px;
+    background-position: 247px 0.5px;
+    outline: none;
+    box-shadow: 0 0 20px rgba(20,20,30,0.25);
+}
+select::-ms-expand{
+    display: none;
+}
+select:hover{
+    border: 6px solid var(--primary-color);
+}
+select option{
+    background-color: var(--primary-color);
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.selected{
+    display: none;
+}
