@@ -8,6 +8,9 @@
     --font-family:  Roboto, sans-serif;
 }
 
+
+/* BUTTONS */
+
 button{
     font-family: var(--font-family);
     font-weight: 0;
@@ -109,4 +112,157 @@ select option{
 }
 .selected{
     display: none;
+}
+
+
+/* TABLES */
+
+.table {
+    /* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+
+.table caption {
+    color: #000;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.table td,
+.table th {
+    border-left: 1px solid #cbcbcb;/*  inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 0.5em 1em; /* cell padding */
+}
+
+.table thead {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+.table td {
+    background-color: transparent;
+}
+.table-odd td {
+    background-color: #f2f2f2;
+}
+
+/* nth-child selector for modern browsers */
+.table-striped tr:nth-child(2n-1) td {
+    background-color: #f2f2f2;
+}
+
+
+/* FORMS */
+
+
+/* estilo general */
+.input-form input[type="text"],
+.input-form input[type="password"],
+.input-form input[type="email"],
+.input-form input[type="url"],
+.input-form input[type="date"],
+.input-form input[type="month"],
+.input-form input[type="time"],
+.input-form input[type="datetime"],
+.input-form input[type="datetime-local"],
+.input-form input[type="week"],
+.input-form input[type="number"],
+.input-form input[type="search"],
+.input-form input[type="tel"],
+.input-form input[type="color"],
+.input-form select,
+.input-form textarea {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+/* focus */
+.input-form input[type="text"]:focus,
+.input-form input[type="password"]:focus,
+.input-form input[type="email"]:focus,
+.input-form input[type="url"]:focus,
+.input-form input[type="date"]:focus,
+.input-form input[type="month"]:focus,
+.input-form input[type="time"]:focus,
+.input-form input[type="datetime"]:focus,
+.input-form input[type="datetime-local"]:focus,
+.input-form input[type="week"]:focus,
+.input-form input[type="number"]:focus,
+.input-form input[type="search"]:focus,
+.input-form input[type="tel"]:focus,
+.input-form input[type="color"]:focus,
+.input-form select:focus,
+.input-form textarea:focus {
+    outline: 0;
+    border-color: #129FEA;
+}
+
+.input-form input:not([type]):focus {
+    outline: 0;
+    border-color: #129FEA;
+}
+
+.input-form input[type="file"]:focus,
+.input-form input[type="radio"]:focus,
+.input-form input[type="checkbox"]:focus {
+    outline: thin solid #129FEA;
+    outline: 1px auto #129FEA;
+}
+.input-form .input-checkbox,
+.input-form .input-radio {
+    margin: 0.5em 0;
+    display: block;
+}
+
+
+/* disable */
+
+.input-form input[type="text"][disabled],
+.input-form input[type="password"][disabled],
+.input-form input[type="email"][disabled],
+.input-form input[type="url"][disabled],
+.input-form input[type="date"][disabled],
+.input-form input[type="month"][disabled],
+.input-form input[type="time"][disabled],
+.input-form input[type="datetime"][disabled],
+.input-form input[type="datetime-local"][disabled],
+.input-form input[type="week"][disabled],
+.input-form input[type="number"][disabled],
+.input-form input[type="search"][disabled],
+.input-form input[type="tel"][disabled],
+.input-form input[type="color"][disabled],
+.input-form select[disabled],
+.input-form textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+}
+
+/*read only*/
+.input-form input[readonly],
+.input-form select[readonly],
+.input-form textarea[readonly] {
+    background-color: #eee; /* menu hover bg color */
+    color: #777; /* menu text color */
+    border-color: #ccc;
 }
