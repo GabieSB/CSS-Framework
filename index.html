@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS FRAMEWORK</title>
     <link rel="stylesheet" href="style.css">
+    <script src="recurso.js"></script>
 </head>
+
 <body>
     <button class="">Click Me</button>
     <button class="primary-btn">Click Me</button>
@@ -15,7 +18,7 @@
     <button class="danger-btn">Click Me</button>
 
     <button class="primary-btn rounded-btn">Click Me</button>
-        
+
     <!-- <select>
         <option selected class="selected">Choose Your Coffee</option>
         <option>Cappuccino</option>
@@ -25,69 +28,162 @@
         <option>Frappe</option>
     </select> -->
 
-    <table class="table">
+    <table class="table td">
         <thead>
-        <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-        </tr>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        </tr>
-        <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        </tr>
-        <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-        </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
         </tbody>
-        </table>
+    </table>
 
-        <table class="table table-striped">
-            <thead>
+    <table class="table table-striped">
+        <thead>
             <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
             </tr>
-            </thead>
-            <tbody>
+        </thead>
+        <tbody>
             <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            </tr>
-            <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
             </tr>
             <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
             </tr>
-            </tbody>
-            </table>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <div class="input-form">
+        <input type="text" readonly>
+        <input type="password" disabled>
+        <input type="date">
+        <input type="url">
+        <input type="date">
+        <input type="month">
+        <input type="time">
+        <input type="datetime">
+        <input type="date-local">
+        <input type="week">
+        <input type="number">
+        <input type="search">
+        <input type="tel">
+        <input type="color">
+        <!--select name="select">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>Value 2</option>
+            <option value="value3">Value 3</option>
+          </select-->
+        <div>
+            <label>State</label>
+            <select>
+                <option>AL</option>
+                <option>CA</option>
+                <option>IL</option>
+                <option>MD</option>
+                <option>NY</option>
+            </select>
+        </div>
+        <select name="cars" id="cars">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+        <select name="cars" id="cars" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Este es mi segundo
+            checkbox</label>
+    </div>
 
-    
+    <form class="input-form">
+        <label class="input-checkbox">
+            <input type="checkbox" value="">
+            Here's option one.
+        </label>
+
+        <label class="input-radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Here's a radio button. You can choose this one...
+        </label>
+
+        <label class="input-radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            ...Or this one!
+        </label>
+    </form>
+    <div class="progress-bar-gris">
+        <div id="myBar" class="progress-container progress-bar-color" style="height:24px;width:0%"></div>
+    </div>
+    <button onclick="move()">Cargar</button>
+    </div>
+    <div>
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">London</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Paris</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">Tokyo</button>
+        </div>
+
+        <div id="London" class="w3-container w3-border city">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="w3-container w3-border city" style="display:none">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="Tokyo" class="w3-container w3-border city" style="display:none">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
