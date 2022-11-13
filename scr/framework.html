@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagestyle.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>CSS FRAMEWORK</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <a href="#buttons"></a>
+            <a href="#forms"></a>
+            <a href="#tables"></a>
+            <a href="#tabs"></a>
+        </nav>
+    </header>
+   <article class="article">
+        <section id="buttons">
+            <div class="buttons">
+                <div class="m-5">
+                    <h1>Botones</h1>
+                </div>
+                <div>
+                    <div>Botones normales</div>
+                    <div class="m-5">
+                        <button class="">Click Me</button>
+                        <button class="primary-btn">Click Me</button>
+                        <button class="success-btn">Click Me</button>
+                        <button class="warning-btn">Click Me</button>
+                        <button class="danger-btn">Click Me</button>
+                    </div>
+                    <pre class="code-box">
+                        <code>
+                            &lt;button class=""&gt;Click Me&lt;/button&gt;
+                            &lt;button class="primary-btn"&gt;Click Me&lt;/button&gt;
+                            &lt;button class="secondary-btn"&gt;Click Me&lt;/button&gt;
+                            &lt;button class="warning-btn"&gt;Click Me&lt;/button&gt;
+                            &lt;button class="danger-btn"&gt;Click Me&lt;/button&gt;
+                        </code>
+                     </pre>
+
+                </div>
+                <div>
+                    <div>Botones redondos</div>
+                    <div class="m-5">
+                        <button class="rounded-btn">Click Me</button>
+                        <button class="primary-btn rounded-btn">Click Me</button>
+                        <button class="success-btn rounded-btn">Click Me</button>
+                        <button class="warning-btn rounded-btn">Click Me</button>
+                        <button class="danger-btn rounded-btn">Click Me</button>
+                    </div>
+                    <pre class="code-box">
+                        <code>
+                            &lt;button class=""&gt;Click Me&lt;/button&gt;
+                            &lt;button class="primary-btn"&gt;Click Me&lt;/button&gt;
+                            &lt;button class="success-btn"&gt;Click Me&lt;/button&gt;
+                            &lt;button class="warning-btn"&gt;Click Me&lt;/button&gt;
+                            &lt;button class="danger-btn"&gt;Click Me&lt;/button&gt;
+                        </code>
+                     </pre>
+                </div>
+                <div>
+                    <div>Botones tamaños</div>
+                    <div class="m-5">
+                        <button class="primary-btn sm-btn">Click Me</button>
+                        <button class="primary-btn ">Click Me</button>
+                        <button class="success-btn lg-btn">Click Me</button>
+                    </div>
+                    <pre class="code-box">
+                        <code>
+                            &lt;button class=""&gt;Click Me&lt;/button&gt;
+                            &lt;button class="primary-btn md-btn"&gt;Click Me&lt;/button&gt;
+                            &lt;button class="primary-btn lg-btn"&gt;Click Me&lt;/button&gt;
+                        </code>
+                     </pre>
+                </div>
+               
+               
+            </div>
+          
+           
+           
+        </section>
+        <section id="forms">
+            <div>
+                <div><h1>Forms</h1></div>
+                <form class="input-form">
+                    <div class="form">
+                        <div class="row m-10">
+                            <input type="text" placeholder="Text Input">
+                            <input type="search" placeholder="Search input">
+                            <input type="password" placeholder="Search input">
+                            <input type="number" placeholder="Number input">
+                           
+                        </div>
+                        <div class="row m-10" >
+                            <input type="text" disabled placeholder="Disabled">
+                            <input type="text" readonly placeholder="Read Only">
+                            <input type="checkbox" placeholder="checkbox">
+                            <input type="radio">
+                        </div>
+                        <div class="row m-10">
+                            <select name="fooselect">
+                                <option value="CA">CA</option>
+                                <option value="NY">NY</option>
+                            <select>
+                          
+                            
+                            <select name="fooselect">
+                                <optgroup label="Theropods">
+                                    <option>Tyrannosaurus</option>
+                                    <option>Velociraptor</option>
+                                    <option>Deinonychus</option>
+                                </optgroup>
+                                <optgroup label="Sauropods">
+                                    <option>Diplodocus</option>
+                                    <option>Saltasaurus</option>
+                                    <option>Apatosaurus</option>
+                                </optgroup>
+                            <select>    
+                            <!-- <button type="submit" class="">Sign in</button> -->
+
+                        </div>
+                        <div class="row m-10">
+                            <select name="fooselect" multiple>
+                                <option>Diplodocus</option>
+                                <option>Saltasaurus</option>
+                                <option>Apatosaurus</option>
+                                <option>Tyrannosaurus</option>
+                            <select>
+
+                        </div>
+                       
+                       
+
+                       
+
+                    </div>
+                  
+                  
+                </form>
+            </div>
+           
+            
+        </section>
+        <section id="tables">
+            <div class="p-5">
+               <div>
+                    <div><h1>Tablas</h1></div>
+                    <div>Tabla normal</div>
+                    <div class="m-5">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Proyecto</th>
+                                <th>Avance</th>
+                                <th>Cliente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Back Order</td>
+                                <td>50%</td>
+                                <td>Grupo SCF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Inventarios RF</td>
+                                <td>54%</td>
+                                <td>ICEM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Ecommerce</td>
+                                <td>80%</td>
+                                <td>Los Pollitos</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div>
+                        <pre class="code-box">
+                            <code>
+                                &lt;table class="table"&gt;
+                               
+                                &lt;/table&gt;
+                            </code>
+                        </pre>
+
+                    </div>
+               </div>
+
+                <div>
+                    <div>Tabla stripped</div>
+                    <div class="m-5">
+                        <table class="table table-striped">
+                            <thead>
+                               <tr>
+                                  <th>#</th>
+                                  <th>Proyecto</th>
+                                  <th>Avance</th>
+                                  <th>Cliente</th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                  <th scope="row">1</th>
+                                  <td>Back Order</td>
+                                  <td>50%</td>
+                                  <td>Grupo SCF</td>
+                               </tr>
+                               <tr>
+                                  <th scope="row">2</th>
+                                  <td>Inventarios RF</td>
+                                  <td>54%</td>
+                                  <td>ICEM</td>
+                               </tr>
+                               <tr>
+                                  <th scope="row">3</th>
+                                  <td>Ecommerce</td>
+                                  <td>80%</td>
+                                  <td>Los Pollitos</td>
+                               </tr>
+                            </tbody>
+                         </table>
+    
+                    </div>
+                    <div>
+                        <pre class="code-box">
+                            <code>
+                                &lt;table class="table table-striped"&gt;
+                               
+                                &lt;/table&gt;
+                            </code>
+                        </pre>
+
+                    </div>
+                </div>
+               
+            </div>
+            
+        </section>
+        <section id="tabs">
+            <div>Pestañas</div>
+            
+        </section>
+      
+
+   </article>
+    
+</body>
+</html>
