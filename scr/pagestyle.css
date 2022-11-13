@@ -18,6 +18,8 @@ html{
     height: 100vh;
 }
 
+
+
 .header nav{
     position: fixed;
     top: 50%;
@@ -33,18 +35,30 @@ html{
     height: 50px;
     width: 50px;
 }
-
-.header nav a:nth-child(1), article #buttons{
+.header nav a:nth-child(1), article #info{
+    background-color: rgb(204, 239, 244);
+}
+.header nav a:nth-child(2), article #buttons{
     background-color: rgb(212, 203, 239);
 }
-.header nav a:nth-child(2), article #forms{
+.header nav a:nth-child(3), article #buttons2{
+    background-color: rgb(212, 203, 239);
+}
+.header nav a:nth-child(4), article #forms{
     background-color: rgb(203, 239, 221);
 }
-.header nav a:nth-child(3), article #tables{
+.header nav a:nth-child(5), article #tables{
     background-color: rgb(225, 239, 203);
 }
-.header nav a:nth-child(4), article #tabs {
+.header nav a:nth-child(6), article #tabs1 {
     background-color: rgb(239, 209, 203);
+}
+.header nav a:nth-child(7), article #elements {
+    background-color: rgb(255, 255, 255);
+}
+
+#tabs1, #elements{
+    display: block; 
 }
 
 .buttons{
@@ -62,4 +76,8 @@ pre code {
 
 .form{
     display:  block;
+}
+
+.menu{
+   display: block;
 }

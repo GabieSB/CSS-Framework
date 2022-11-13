@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pagestyle.css">
     <link rel="stylesheet" href="../style.css">
+    <script src="recurso.js" defer></script>
     <title>CSS FRAMEWORK</title>
 </head>
+
 <body>
 
     <header class="header">
         <nav>
+            <a href="#info"></a>
             <a href="#buttons"></a>
+            <a href="#buttons2"></a>
             <a href="#forms"></a>
             <a href="#tables"></a>
-            <a href="#tabs"></a>
+            <a href="#tabs1"></a>
+            <a href="#elements"></a>
         </nav>
     </header>
-   <article class="article">
+    <article class="article">
+        <section id="info">
+           
+            <div class="menu">
+                <h1 class="m-20">CSS Plantilla</h1>
+               
+                <a href="#buttons"> <button class="primary-btn">Botones </button></a>
+                <a href="#buttons2"> <button class="primary-btn">Botones tamaños</button></a>
+                <a href="#forms"> <button class="primary-btn">Formularios </button></a>
+                <a href="#tables"> <button class="primary-btn">Tablas </button></a>
+                <a href="#tabs1"> <button class="primary-btn">Tabs </button></a>
+                <a href="#elements"> <button class="primary-btn">Elementos generales</button></a>
+                <h1 class="m-20">Desarrollado por: </h1>
+                <span class="m-20">Mónica Serracín </span>
+                <span class="m-20">Gerardo Araya </span>
+
+            </div>
+            
+            
+         
+            
+        </section>
         <section id="buttons">
             <div class="buttons">
                 <div class="m-5">
@@ -62,9 +89,23 @@
                             &lt;button class="danger-btn"&gt;Click Me&lt;/button&gt;
                         </code>
                      </pre>
+
                 </div>
+
+
+            </div>
+
+
+
+        </section>
+        <section id="buttons2">
+            <div class="buttons">
+                <div class="m-5">
+                    <h1>Botones</h1>
+                </div>
+               
                 <div>
-                    <div>Botones tamaños</div>
+                    <div class="m-10">Botones tamaños</div>
                     <div class="m-5">
                         <button class="primary-btn sm-btn">Click Me</button>
                         <button class="primary-btn ">Click Me</button>
@@ -78,51 +119,92 @@
                         </code>
                      </pre>
                 </div>
-               
-               
+
+                <div>
+                    <div class="m-10"> Botones dropdown</div>
+                    
+                    <div class="dropdown">
+                        <button class="primary-btn">Dropdown</button>
+                        <div class="dropdown-list">
+                          <a href="#">Item 1</a>
+                          <a href="#">Item 2</a>
+                          <a href="#">Item 3</a>
+                        </div>
+                    </div>
+                
+                    <pre class="code-box">
+                        <code>
+                            &lt;div class="dropdown"&gt;
+                            &lt;button class="primary-btn"&gt;Dropdown&lt;/button&gt;
+                            &lt;div class="dropdown-list"&gt;
+                              &lt;a href="#"&gt;Item 1&lt;/a&gt;
+                              &lt;a href="#"&gt;Item 2&lt;/a&gt;
+                              &lt;a href="#"&gt;Item 3&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                     </pre>
+                </div>
+
+
             </div>
-          
-           
-           
+
+
+
         </section>
         <section id="forms">
             <div>
-                <div><h1>Forms</h1></div>
+                <div>
+                    <h1>Forms</h1>
+                </div>
                 <form class="input-form">
                     <div class="form">
                         <div class="row m-10">
                             <input type="text" placeholder="Text Input">
                             <input type="search" placeholder="Search input">
-                            <input type="password" placeholder="Search input">
+                            <input type="password" placeholder="Passowrd input">
                             <input type="number" placeholder="Number input">
-                           
-                        </div>
-                        <div class="row m-10" >
-                            <input type="text" disabled placeholder="Disabled">
-                            <input type="text" readonly placeholder="Read Only">
-                            <input type="checkbox" placeholder="checkbox">
-                            <input type="radio">
+
                         </div>
                         <div class="row m-10">
+                            <input type="text" disabled placeholder="Disabled">
+                            <input type="text" readonly placeholder="Read Only">
+                            <label for="check">Check Box</label>
+                            <input type="checkbox" id="check" placeholder="checkbox">
+                            <label for="radio">Radio button</label>
+                            <input id="radio" name="test" type="radio">
+                            <input id="radio" name="test" type="radio">
+                            <input id="radio" name="test" type="radio"> 
+                        </div>
+                        <pre class="code-box">
+                            <code>
+                                &lt;input type="text" placeholder="Text Input"&gt;
+                                &lt;input type="password" placeholder="Password Input"&gt;
+                                &lt;input type="checkbox" placeholder="checkbox">
+                                &lt;input type="radio" name="test"&gt;
+                            </code>
+                         </pre>
+
+                        <div class="row m-10">
                             <select name="fooselect">
-                                <option value="CA">CA</option>
-                                <option value="NY">NY</option>
-                            <select>
-                          
-                            
-                            <select name="fooselect">
-                                <optgroup label="Theropods">
-                                    <option>Tyrannosaurus</option>
-                                    <option>Velociraptor</option>
-                                    <option>Deinonychus</option>
-                                </optgroup>
-                                <optgroup label="Sauropods">
-                                    <option>Diplodocus</option>
-                                    <option>Saltasaurus</option>
-                                    <option>Apatosaurus</option>
-                                </optgroup>
-                            <select>    
-                            <!-- <button type="submit" class="">Sign in</button> -->
+                                <option value="SJ">San Jose</option>
+                                <option value="PU">Puntarenas</option>
+                                <select>
+
+
+                                    <select name="fooselect">
+                                        <optgroup label="Theropods">
+                                            <option>Tyrannosaurus</option>
+                                            <option>Velociraptor</option>
+                                            <option>Deinonychus</option>
+                                        </optgroup>
+                                        <optgroup label="Sauropods">
+                                            <option>Diplodocus</option>
+                                            <option>Saltasaurus</option>
+                                            <option>Apatosaurus</option>
+                                        </optgroup>
+                                        <select>
+                                            <!-- <button type="submit" class="">Sign in</button> -->
 
                         </div>
                         <div class="row m-10">
@@ -131,56 +213,66 @@
                                 <option>Saltasaurus</option>
                                 <option>Apatosaurus</option>
                                 <option>Tyrannosaurus</option>
-                            <select>
+                                <select>
 
                         </div>
-                       
-                       
+                        <pre class="code-box">
+                            <code>
+                                &lt;select name="fooselect"&gt;
+                                &lt;option value="SJ"&gt;San Jose&lt;/option&gt;
+                                &lt;option value="PU"&gt;Puntarenas&lt;/option&gt;
+                                &lt;select&gt;
+                            </code>
+                         </pre>
 
-                       
+
+
+
 
                     </div>
-                  
-                  
+
+
                 </form>
             </div>
-           
-            
+
+
         </section>
         <section id="tables">
             <div class="p-5">
-               <div>
-                    <div><h1>Tablas</h1></div>
+                <div>
+                    <div>
+                        <h1>Tablas</h1>
+                    </div>
                     <div>Tabla normal</div>
                     <div class="m-5">
                         <table class="table">
                             <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Proyecto</th>
-                                <th>Avance</th>
-                                <th>Cliente</th>
-                            </tr>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Proyecto</th>
+                                    <th>Avance</th>
+                                    <th>Cliente</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Back Order</td>
-                                <td>50%</td>
-                                <td>Grupo SCF</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Inventarios RF</td>
-                                <td>54%</td>
-                                <td>ICEM</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Ecommerce</td>
-                                <td>80%</td>
-                                <td>Los Pollitos</td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Back Order</td>
+                                    <td>50%</td>
+                                    <td>Grupo SCF</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Inventarios RF</td>
+                                    <td>54%</td>
+                                    <td>ICEM</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Ecommerce</td>
+                                    <td>80%</td>
+                                    <td>Los Pollitos</td>
+                                </tr>
                             </tbody>
                         </table>
 
@@ -195,42 +287,42 @@
                         </pre>
 
                     </div>
-               </div>
+                </div>
 
                 <div>
                     <div>Tabla stripped</div>
                     <div class="m-5">
                         <table class="table table-striped">
                             <thead>
-                               <tr>
-                                  <th>#</th>
-                                  <th>Proyecto</th>
-                                  <th>Avance</th>
-                                  <th>Cliente</th>
-                               </tr>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Proyecto</th>
+                                    <th>Avance</th>
+                                    <th>Cliente</th>
+                                </tr>
                             </thead>
                             <tbody>
-                               <tr>
-                                  <th scope="row">1</th>
-                                  <td>Back Order</td>
-                                  <td>50%</td>
-                                  <td>Grupo SCF</td>
-                               </tr>
-                               <tr>
-                                  <th scope="row">2</th>
-                                  <td>Inventarios RF</td>
-                                  <td>54%</td>
-                                  <td>ICEM</td>
-                               </tr>
-                               <tr>
-                                  <th scope="row">3</th>
-                                  <td>Ecommerce</td>
-                                  <td>80%</td>
-                                  <td>Los Pollitos</td>
-                               </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Back Order</td>
+                                    <td>50%</td>
+                                    <td>Grupo SCF</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Inventarios RF</td>
+                                    <td>54%</td>
+                                    <td>ICEM</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Ecommerce</td>
+                                    <td>80%</td>
+                                    <td>Los Pollitos</td>
+                                </tr>
                             </tbody>
-                         </table>
-    
+                        </table>
+
                     </div>
                     <div>
                         <pre class="code-box">
@@ -243,17 +335,115 @@
 
                     </div>
                 </div>
-               
-            </div>
-            
-        </section>
-        <section id="tabs">
-            <div>Pestañas</div>
-            
-        </section>
-      
 
-   </article>
-    
+            </div>
+
+        </section>
+        <section id="tabs1">
+            <div class="d-flex p-10">
+                <h1>Pestañas</h1>
+            </div>
+            <div class="container">
+                <ul class="tabs">
+                    <li data-tab-title="#home" class="active tab">Home</li>
+                    <li data-tab-title="#contact" class="tab">Contact</li>
+                    <li data-tab-title="#about" class="tab">About</li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" data-tab-content class="active">
+                        <h1>Home</h1>
+                        <p>Este es el home</p>
+                    </div>
+                    <div id="contact" data-tab-content>
+                        <h1>Contact</h1>
+                        <p>Informacion de contacto</p>
+                    </div>
+                    <div id="about" data-tab-content>
+                        <h1>About</h1>
+                        <p>Sobre nosotros</p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <pre class="code-box d-flex">
+                            <code>
+                                &lt;ul class="tabs"&gt;
+                                &lt;li data-tab-title="#home" class="active tab"&gt;Home&lt;/li&gt;
+                                &lt;li data-tab-title="#contact" class="tab"&gt;Contact&lt;/li&gt;
+                                &lt;li data-tab-title="#about" class="tab"&gt;About&lt;/li&gt;
+                            &lt;/ul&gt;
+                            
+                            &lt;div class="tab-content"&gt;
+                                &lt;div id="home" data-tab-content class="active"&gt;
+                                  &lt;h1&gt;Home&lt;/h1&gt;
+                                  &lt;p&gt;Este es el home&lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;div id="contact" data-tab-content&gt;
+                                  &lt;h1&gt;Contact&lt;/h1&gt;
+                                  &lt;p&gt;Informacion de contacto&lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;div id="about" data-tab-content&gt;
+                                  &lt;h1&gt;About&lt;/h1&gt;
+                                  &lt;p&gt;Sobre nosotros&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            </code>
+                        </pre>
+
+            </div>
+
+
+        </section>
+        <section id="elements">
+            <div class="d-flex p-10"> <h1>Elementos generales</h1></div>
+            <div class="container">
+                
+                <div>
+                    <h1 class="p-10">Pogress Bar</h1>
+                    <div class="progress-bar">
+                        <div id="myBar" class="progress-container progress-bar-color" style="height:24px;width:0%"></div>
+                    </div>
+                    <button class="m-10" onclick="move()">Cargar</button>
+
+                    <pre class="code-box">
+                        <code>
+                            &lt;div class="progress-bar"&gt;
+                            &lt;div id="myBar" class="progress-container progress-bar-color" style="height:24px;width:0%"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div>
+                    <h1 class="p-10">Listas</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                    </ul>
+                    <pre class="code-box">
+                        <code>
+                            &lt;ul class="list-group"&gt;
+                            &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+                            &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code>
+                    </pre>
+                </div>
+              
+
+               
+
+               
+
+            </div>
+           
+
+        </section>
+
+
+    </article>
+
 </body>
+
 </html>
